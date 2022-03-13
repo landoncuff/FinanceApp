@@ -1,0 +1,54 @@
+ <View style={styles.cardTopMainView}>
+<View style={styles.leftCard}>
+        <Text>Hello My Friend</Text>
+      </View>
+      <View style={styles.rightCard}>
+          <Text>Landon is so cool</Text>
+      </View>
+    </View>
+    <View style={styles.cardBottomMainView}>
+      <View style={styles.leftCard}>
+        <Text>Hello My Kassidy</Text>
+      </View>
+      <View style={styles.rightCard}>
+          <Text>Landon is so cool</Text>
+      </View>
+    </View>
+
+
+
+
+    <SafeAreaView style={{backgroundColor: 'dodgerblue'}}>
+      <ScrollView>
+        <View style={styles.container}>
+          <View style={styles.homeHeaderView}>
+            <Text style={styles.welcomeText}>Welcome Landon</Text>
+          </View>
+          <View style={styles.graphHeader}>
+            <Text style={styles.graphText}>Total Payments:</Text>
+            <Text style={styles.totalAmountText}>$20,000</Text>
+          </View>
+          <View style={{margin: 40}}></View>
+          <View style={{margin: 40}}></View>
+          <View style={{margin: 40}}></View>
+          <View style={{margin: 20}}></View>
+        </View>
+        <View style={styles.containerCard}>
+        <View style={{margin: 40}}></View>
+          <View style={{margin: 40}}></View>
+          <View style={{margin: 40}}></View>
+          <View style={{margin: 20}}></View>
+
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+
+
+    <View style={{flexDirection: 'row'}}>
+            <View style={styles.leftCard}>
+              <Text style={{padding: 10}}>Hello</Text>
+            </View>
+            <View style={styles.rightCard}>
+              <Text style={{padding: 10}}>Hello</Text>
+            </View>
+          </View>

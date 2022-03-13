@@ -1,55 +1,51 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View , SafeAreaView, ScrollView} from 'react-native';
 
 export default function App() {
   return (
-    <ScrollView style={{backgroundColor: 'dodgerblue'}}>
-    <SafeAreaView style={styles.container}>
-          <View style={styles.homeHeaderView}>
+    <React.Fragment>
+      <SafeAreaView style={{backgroundColor: 'dodgerblue'}}></SafeAreaView>
+      <View style={styles.container}>
+        <View>
             <Text style={styles.welcomeText}>Welcome Landon</Text>
-          </View>
-          <View style={styles.graphHeader}>
+        </View>
+        <View style={styles.graphHeader}>
             <Text style={styles.graphText}>Total Payments:</Text>
             <Text style={styles.totalAmountText}>$20,000</Text>
-          </View>
-          <View style={{margin: 40}}></View>
-          <View style={{margin: 40}}></View>
-          <View style={{margin: 40}}></View>
-          <View style={{margin: 20}}></View>
-    </SafeAreaView>
-    <SafeAreaView style={styles.containerCard}>
-    <View style={styles.cardTopMainView}>
-      <View style={styles.leftCard}>
-        <Text>Hello My Friend</Text>
+        </View>
       </View>
-      <View style={styles.rightCard}>
-          <Text>Landon is so cool</Text>
+      {/* New section */}
+      <View style={styles.containerCard}>
+        <View style={styles.cardMainView}>
+            <View style={styles.topLeftCard}>
+              <Text style={{padding: 10}}>Hello</Text>
+            </View>
+            <View style={styles.topRightCard}>
+              <Text style={{padding: 10}}>Hello</Text>
+            </View>
+        </View>
+        <View style={styles.bottomCardView}>
+            <View style={styles.bottomLeftCard}>
+              <Text style={{padding: 10}}>Hello</Text>
+            </View>
+            <View style={styles.bottomRightCard}>
+              <Text style={{padding: 10}}>Hello</Text>
+            </View>
+        </View>
       </View>
-    </View>
-    <View style={styles.cardBottomMainView}>
-      <View style={styles.leftCard}>
-        <Text>Hello My Kassidy</Text>
-      </View>
-      <View style={styles.rightCard}>
-          <Text>Landon is so cool</Text>
-      </View>
-    </View>
-    </SafeAreaView>
-    </ScrollView>
+    </React.Fragment>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    // backgroundColor: 'dodgerblue',
-    flexDirection: 'column',
-  },
-  homeHeaderView: { 
-    marginTop: '5%'
+    backgroundColor: 'dodgerblue', 
+    flex: 1, 
+    flexDirection: 'column'
   },
   welcomeText: {
-    fontSize: 25,
+    fontSize: 15,
     color: 'white',
     textAlign: 'center',
     fontWeight: 'bold'
@@ -70,45 +66,55 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: 'bold',
     marginTop: '4%',
-    fontSize: 30
+    fontSize: 35
   },
   containerCard: {
-    backgroundColor:'grey',
+    backgroundColor:'dodgerblue',
     flex: 1,
     flexDirection: 'column',
-    borderRadius: 20,
-    height: '100%'
   },
-  cardTopMainView: {
-    flexDirection: 'row', 
-    justifyContent: "space-between"
+  cardMainView: {
+    backgroundColor: 'grey', 
+    flex: 1, 
+    borderTopLeftRadius: 40,
+    borderTopRightRadius: 40,
+    flexDirection: 'row',
   },
-  leftCard: {
-    // marginTop: 30, 
-    // marginBottom:30, 
-    // marginRight: 20, 
-    // marginLeft: 20, 
-    height: '80%',
-    width: '40%',
+  bottomCardView: {
+    backgroundColor: 'grey', 
+    flex: 1, 
+    flexDirection: 'row',
+  },
+  topLeftCard: {
     backgroundColor: 'red', 
-    // padding: 35,
-    borderRadius: 15
+    width: '45%', 
+    height: '60%', 
+    margin: 13, 
+    borderRadius: 20
   },
-  rightCard: {
-    // marginTop: 30, 
-    // marginBottom:30, 
+  topRightCard: {
     backgroundColor: 'red', 
-    // padding: 35, 
-    // paddingBottom: 40,
-    // marginRight: 20,
-    borderRadius: 15,
-    height: '200px',
-    width: '40%',
+    width: '45%', 
+    height: '60%', 
+    margin: 14, 
+    borderRadius: 20, 
+    marginLeft: 0
   },
-  cardBottomMainView: {
-    flexDirection: 'row', 
-    justifyContent: "space-between"
-    // alignItems: 'baseline'
+  bottomLeftCard: {
+    backgroundColor: 'blue', 
+    width: '45%', 
+    height: '60%', 
+    margin: 13, 
+    borderRadius: 20
   },
+  bottomRightCard: {
+    backgroundColor: 'blue', 
+    width: '45%', 
+    height: '60%', 
+    // margin: 14,
+    // marginBottom: 70,
+    borderRadius: 20, 
+    marginLeft: 0
+  }
 
 });
