@@ -16,23 +16,30 @@ export default function App() {
         </View>
       </View>
       {/* New section */}
-      <View style={styles.containerCard}>
-        <View style={styles.cardMainView}>
-            <View style={styles.topLeftCard}>
-              <Text style={{padding: 10}}>Hello</Text>
-            </View>
-            <View style={styles.topRightCard}>
-              <Text style={{padding: 10}}>Hello</Text>
-            </View>
-        </View>
-        <View style={styles.bottomCardView}>
-            <View style={styles.bottomLeftCard}>
-              <Text style={{padding: 10}}>Hello</Text>
-            </View>
-            <View style={styles.bottomRightCard}>
-              <Text style={{padding: 10}}>Hello Landon</Text>
-            </View>
-        </View>
+      <View style={styles.containerCard}>   
+          <View style={styles.cardMainView}>
+              <View style={styles.buttonRows}>
+                <View style={styles.topLeftCard}>
+                  <Text style={{padding: 10}}>Hello</Text>
+                </View>
+                <View style={styles.topRightCard}>
+                  <Text style={{padding: 10}}>Hello</Text>
+                </View>
+              </View>
+              <View style={styles.buttonRows}>
+                <View style={styles.topLeftCard}>
+                  <Text style={{padding: 10}}>Hello</Text>
+                </View>
+                <View style={styles.topRightCard}>
+                  <Text style={{padding: 10}}>Hello</Text>
+                </View>
+              </View>
+              <View style={styles.buttonRows}>
+                <View style={styles.bottomMoneyButton}>
+                  <Text style={{padding: 10}}>Hello</Text>
+                </View>
+              </View>
+          </View>
       </View>
     </React.Fragment>
   );
@@ -78,44 +85,34 @@ const styles = StyleSheet.create({
     flex: 1, 
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
-    flexDirection: 'row',
+    flexDirection: 'column',
+    // justifyContent: 'space-evenly'
   },
-  bottomCardView: {
-    backgroundColor: 'grey', 
-    flex: 1, 
+  buttonRows: {
     flexDirection: 'row',
+    marginBottom: 70
+    // justifyContent: 'space-evenly'
   },
   topLeftCard: {
     backgroundColor: 'red', 
     width: '45%', 
-    height: '60%', 
+    height: '170%', 
     margin: 13, 
-    borderRadius: 20
+    borderRadius: 20,
   },
   topRightCard: {
     backgroundColor: 'red', 
     width: '45%', 
-    height: '60%', 
-    margin: 14, 
-    borderRadius: 20, 
-    marginLeft: 0
-  },
-  bottomLeftCard: {
-    backgroundColor: 'blue', 
-    width: '45%', 
-    height: '60%', 
+    height: '170%', 
     margin: 13, 
-    borderRadius: 20
-  },
-  bottomRightCard: {
-    backgroundColor: 'blue', 
-    width: '45%', 
-    height: '60%', 
-    // margin: 14,
-    // marginBottom: 70,
-    //Test
     borderRadius: 20, 
-    marginLeft: 0
+    marginLeft: 0,
+  },
+  bottomMoneyButton: {
+    backgroundColor: 'red', 
+    width: '93%', 
+    height: '170%', 
+    margin: 13, 
+    borderRadius: 20, 
   }
-
 });
