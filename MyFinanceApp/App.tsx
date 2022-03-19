@@ -30,7 +30,7 @@ export default function App() {
               <Text style={{padding: 10}}>Hello</Text>
             </View>
             <View style={styles.bottomRightCard}>
-              <Text style={{padding: 10}}>Hello</Text>
+              <Text style={{padding: 10}}>Hello Landon</Text>
             </View>
         </View>
       </View>
@@ -113,6 +113,7 @@ const styles = StyleSheet.create({
     height: '60%', 
     // margin: 14,
     // marginBottom: 70,
+    //Test
     borderRadius: 20, 
     marginLeft: 0
   }
