@@ -18,26 +18,28 @@ export default function App() {
       {/* New section */}
       <View style={styles.containerCard}>   
           <View style={styles.cardMainView}>
-              <View style={styles.buttonRows}>
+              <View style={styles.topButtonRow}>
                 <View style={styles.topLeftCard}>
-                  <Text style={{padding: 10}}>Hello</Text>
+                  <Text style={styles.moneyHeaderText}>Spent This Month</Text>
+                  <Text style={styles.moneyText}>$1200</Text>
                 </View>
                 <View style={styles.topRightCard}>
-                  <Text style={{padding: 10}}>Hello</Text>
+                  <Text style={styles.moneyHeaderText}>Saved This Month</Text>
+                  <Text style={styles.moneyText}>$1200</Text>
                 </View>
               </View>
-              <View style={styles.buttonRows}>
+              <View style={styles.middlebuttonRows}>
                 <View style={styles.topLeftCard}>
-                  <Text style={{padding: 10}}>Hello</Text>
+                  <Text style={styles.moneyHeaderText}>Earned This Month</Text>
+                  <Text style={styles.moneyText}>$1200</Text>
                 </View>
                 <View style={styles.topRightCard}>
-                  <Text style={{padding: 10}}>Hello</Text>
+                  <Text style={styles.moneyHeaderText}>Enter Paycheck</Text>
+                  <Text style={styles.moneyText}>$1200</Text>
                 </View>
               </View>
-              <View style={styles.buttonRows}>
-                <View style={styles.bottomMoneyButton}>
-                  <Text style={{padding: 10}}>Hello</Text>
-                </View>
+              <View style={styles.newButtonRow}>
+                  <Text style={styles.newPaymentText}>Create New Payment</Text>
               </View>
           </View>
       </View>
@@ -86,33 +88,59 @@ const styles = StyleSheet.create({
     borderTopLeftRadius: 40,
     borderTopRightRadius: 40,
     flexDirection: 'column',
-    // justifyContent: 'space-evenly'
   },
-  buttonRows: {
+  topButtonRow: {
     flexDirection: 'row',
-    marginBottom: 70
-    // justifyContent: 'space-evenly'
+    marginBottom: 20,
+    marginTop: 15
+  },
+  middlebuttonRows: {
+    flexDirection: 'row',
+    marginBottom: 50
+  },
+  newButtonRow: {
+    flexDirection: 'row',
+    justifyContent: 'center', 
+    textAlign: 'center', 
+    backgroundColor: 'red',
+    borderRadius: 20,
+    marginRight: 13,
+    marginLeft: 13
   },
   topLeftCard: {
     backgroundColor: 'red', 
     width: '45%', 
-    height: '170%', 
-    margin: 13, 
+    height: '90%', 
+    margin: 13,
     borderRadius: 20,
   },
   topRightCard: {
     backgroundColor: 'red', 
     width: '45%', 
-    height: '170%', 
+    height: '90%', 
     margin: 13, 
     borderRadius: 20, 
     marginLeft: 0,
   },
-  bottomMoneyButton: {
-    backgroundColor: 'red', 
-    width: '93%', 
-    height: '170%', 
-    margin: 13, 
-    borderRadius: 20, 
+  newPaymentText: {
+    padding: 10, 
+    fontSize: 25, 
+    textAlign: 'center', 
+    paddingTop: 10,
+    fontWeight: 'bold',
+    marginBottom: 8,
+    marginTop: 8
+  },
+  moneyText: {
+    paddingTop: 10, 
+    textAlign: 'center', 
+    fontSize: 40, 
+    color: 'white'
+  },
+  moneyHeaderText: {
+    paddingTop: 10, 
+    textAlign: 'center', 
+    fontSize: 20, 
+    fontWeight: 'bold'
   }
 });
