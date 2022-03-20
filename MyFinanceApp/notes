@@ -59,12 +59,3 @@
 
 
 
-
-           <View style={styles.bottomCardView}>
-              <View style={styles.bottomLeftCard}>
-                <Text style={{padding: 10}}>Hello</Text>
-              </View>
-              <View style={styles.bottomRightCard}>
-                <Text style={{padding: 10}}>Hello Landon</Text>
-              </View>
-          </View>

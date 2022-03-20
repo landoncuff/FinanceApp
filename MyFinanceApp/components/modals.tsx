@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { StyleSheet, Text, View , SafeAreaView, ScrollView, Modal, Pressable} from 'react-native';
-import SpentThisMonth from './screens/spentThisMonth';
-import HomeScreen from './screens/homeScreen';
+import HomeScreen from '../screens/homeScreen';
+import SpentThisMonth from '../screens/spentThisMonth';
 
-export default function App() {
-  return (
-    <HomeScreen />
-  );
+export function Modals(){
+    <React.Fragment>
+        
+    </React.Fragment>
 }
