@@ -19,6 +19,15 @@ export function SpentThisMonth() {
                         <Text style={styles.tableMiddleText}>$1,200</Text>
                     </View>
                 </View>
+                <View style={{margin: 70}}></View>
+                <View style={{flexDirection: 'row'}}>
+                    <View style={styles.categoryLogo}>
+                        <Text style={styles.tableMiddleTextHeader}>Month Paycheck:</Text>
+                    </View>
+                    <View style={styles.categoryText}>
+                        <Text style={styles.tableMiddleTextHeader}>Spent:</Text>
+                    </View>
+                </View>
             </View>
     );
 }
@@ -59,7 +68,7 @@ const styles = StyleSheet.create({
         marginLeft: 0,
     },
     tableMiddleTextHeader:{
-        paddingTop: 10, 
+        // paddingTop: 10, 
         textAlign: 'center', 
         fontSize: 20, 
         fontWeight: 'bold'
@@ -69,6 +78,20 @@ const styles = StyleSheet.create({
         textAlign: 'center', 
         fontSize: 40, 
         color: 'white'
+    },
+    categoryLogo: {
+        backgroundColor: 'red', 
+        width: '22%', 
+        margin: 13,
+        borderRadius: 20
+    },
+    categoryText: {
+        backgroundColor: 'red', 
+        width: '65%', 
+        margin: 13, 
+        marginLeft: 0,
+        borderRadius: 20,
+        justifyContent: 'center'
     }
 });
 
