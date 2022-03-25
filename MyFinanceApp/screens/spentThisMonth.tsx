@@ -81,17 +81,18 @@ const styles = StyleSheet.create({
     },
     categoryLogo: {
         backgroundColor: 'red', 
-        width: '22%', 
+        width: '13%', 
         margin: 13,
-        borderRadius: 20
+        borderRadius: 20,
     },
     categoryText: {
         backgroundColor: 'red', 
-        width: '65%', 
-        margin: 13, 
+        width: '55%', 
+        margin: 13,
+        marginTop: 18, 
         marginLeft: 0,
         borderRadius: 20,
-        justifyContent: 'center'
+        justifyContent: 'center',
     }
 });
 
