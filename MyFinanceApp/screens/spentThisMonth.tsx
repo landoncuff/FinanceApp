@@ -4,7 +4,7 @@ import { StyleSheet, Text, View , SafeAreaView, ScrollView, Modal, Pressable} fr
 
 export function SpentThisMonth() {
     return (
-            <View style={{backgroundColor: 'green'}}>
+            <View style={{backgroundColor: 'green', height: '100%'}}>
                 <View>
                     <Text style={styles.graphText}>Current Balance:</Text>
                     <Text style={styles.totalAmountText}>$20,000</Text>
@@ -19,7 +19,11 @@ export function SpentThisMonth() {
                         <Text style={styles.tableMiddleText}>$1,200</Text>
                     </View>
                 </View>
-                <View style={{margin: 70}}></View>
+                <View style={{marginTop: '10%', backgroundColor: 'Yellow', flexDirection: 'row', justifyContent: 'flex-start'}}>
+                    <Text>Landon is Cool</Text>
+                    <Text>Landon is Cool</Text>
+                </View>
+                {/* <View style={{margin: 70}}></View>
                 <View style={{flexDirection: 'row'}}>
                     <View style={styles.categoryLogo}>
                         <Text style={styles.tableMiddleTextHeader}>Month Paycheck:</Text>
@@ -27,7 +31,7 @@ export function SpentThisMonth() {
                     <View style={styles.categoryText}>
                         <Text style={styles.tableMiddleTextHeader}>Spent:</Text>
                     </View>
-                </View>
+                </View> */}
             </View>
     );
 }
@@ -45,7 +49,7 @@ const styles = StyleSheet.create({
         color: 'white',
         textAlign: 'center',
         fontWeight: 'bold',
-        marginTop: '4%',
+        marginTop: '10%',
         fontSize: 35
     },
     tableView: {
@@ -54,7 +58,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginRight: 13,
         marginLeft: 13,
-        marginTop: 20,
+        marginTop: '15%',
     },
     tableMiddleViewLeft: {
         backgroundColor: 'red', 

@@ -63,7 +63,7 @@ export function HomeScreen() {
         </View>
 
             {/* This is Modal for spent this month button*/}
-            <Modal visible={spentModalState} animationType="slide" presentationStyle="pageSheet">
+            <Modal visible={spentModalState} animationType="slide" presentationStyle="formSheet">
                 {/* Will close the modal from the modal screen */}
                 <Pressable onPress={() => setSpentModalState(false)} style={styles.modalPressable}>
                 <Text style={styles.modalCloseText}>Close</Text>
@@ -83,7 +83,7 @@ export function HomeScreen() {
             </Modal>
 
             {/* This is Modal for earned this month button*/}
-            <Modal visible={earnedModalState} animationType="slide" presentationStyle="pageSheet">
+            <Modal visible={earnedModalState} animationType="slide" transparent={true} presentationStyle="pageSheet">
                 {/* Will close the modal from the modal screen */}
                 <Pressable onPress={() => setEarnedModalState(false)} style={styles.modalPressable}>
                 <Text style={styles.modalCloseText}>Close</Text>
